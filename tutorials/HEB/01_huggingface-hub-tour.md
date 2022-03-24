@@ -1,51 +1,53 @@
-# Workshop: A Tour through the Hugging Face Hub
+<span dir="rtl" align="right">
+
+# סדנה: סיור ב - Hugging Face Hub 
 
 <aside>
 
-💡 **Welcome!**
+💡 **ברוכים הבאים**
 
-We’ve assembled a toolkit that university instructors can use to easily prepare labs, homework, or classes. The content is designed in a self-contained way such that it can easily be incorporated into the existing curriculum. This content is **free** and uses widely known Open Source technologies (`transformers`, `gradio`, etc).
+הכנו ערכה שמדריכים באוניברסיטה יכולים להשתמש בה כדי להכין בקלות מעבדות, שיעורי בית, או מערכי שיעור. תוכן זה הוא **בחינם** ומשתמש בטכנולוגיות קוד פתוח מוכרות (`transformers`, `gradio`, וכו').
 
-Alternatively, you can request for someone on the Hugging Face team to run the tutorials for your class via the [ML demo.cratization tour](https://www.notion.so/ML-Demo-cratization-tour-with-66847a294abd4e9785e85663f5239652) initiative!
+לחלופין, אפשר לבקש שמישהו מצוות Hugging Face יריץ את ההדרכות לכיתה שלכם דרך יוזמת ה - [ML demo.cratization tour](https://www.notion.so/ML-Demo-cratization-tour-with-66847a294abd4e9785e85663f5239652) !
 
-You can find all the tutorials and resources we’ve assembled [here](https://www.notion.so/Education-Toolkit-7b4a9a9d65ee4a6eb16178ec2a4f3599).
+אפשר למצוא את כל ההדרכות והמשאבים שהרכבנו [כאן](https://www.notion.so/Education-Toolkit-7b4a9a9d65ee4a6eb16178ec2a4f3599).
 
 </aside>
 
-**Duration:** 20 to 40 minutes
+**משך ההדרכה:** 20 עד 40 דקות
 
-**Goal:** Learn how to efficiently use the free [Hub platform](http://hf.co) to be able to collaborate in the ecosystem and within teams in Machine Learning (ML) projects.
+**מטרה:** ללמוד איך להשתמש ביעילות ב - [Hub platform](http://hf.co) החינמי ולהיות מסוגלים לשתף פעולה באקוסיסטם עם צוותים בפרויקטים של machine learning (ML).
 
-Learning goals:
+מטרות למידה:
 
-- Learn about and explore the over 30,000 models shared on the Hub.
-- Learn efficient ways to find suitable models and datasets for your task.
-- Learn how to contribute and work collaboratively.
-- Explore ML demos created by the community.
+- לחקור את יותר מ 30,000 המודלים ששותפו ב - Hub.
+- ללמוד דרכים יעילות למצוא את המודל ואת ה - datasets הנכונים.
+- ללמוד איך לשתף ואיך לעבוד בשיתוף פעולה ב - ML workflow שלכם.
+- לחקור ML demos שיצרו חברי הקהילה.
 
-**Format:** Either short lab or take-home
+**פורמט:** מעבדה קצרה או תרגיל בית.
 
-**Audience:** Students from any background interested in using existing models or sharing their models.
+**קהל היעד:** סטודנטים מכל רקע שמעוניינים להשתמש במודלים קיימים או לשתף מודלים משלהם.
 
-**Prerequisites**
+**דרישות קדם**
 
-- High-level understanding of Machine Learning.
-- (Optional, but encouraged) Experience with Git ([resource](https://learngitbranching.js.org/))
+- הבנה ב - Machine Learning.
+- (אופציונלי, אך מומלץ) ניסיון עם Git ([מדריך](https://learngitbranching.js.org/)).
 
-## **Why the Hub?**
+## **למה להשתמש ב HUB?**
 
-The Hub is a central platform where anyone can share and explore models, datasets, and ML demos. The "solve AI" problem won't be solved by a single company, but by a culture of sharing knowledge and resources. Because of this, the Hub aims to build the most extensive collection of Open Source models, datasets, and demos.
+ה - HUB היא פלטפורמה מרכזית בה כל אחד יכול לחלוק ולחקור מודלים, datasets ו - demos. בעיית ה - "solve AI" לא תפתר על ידי חברה בודדת, אלא על ידי תרבות של שיתוף ידע ומשאבים. לכן, ה - ה Hub מתוכנן להיות אוסף המודלים, ה datasets וה demos הגדול ביותר בקוד פתוח.
 
-Here are some facts about the Hugging Face Hub:
+הנה כמה עובדות על ה - Hugging Face Hub:
 
-- There are over 30,000 public models.
-- There are models for Natural Language Processing, Computer Vision, Audio/Speech, and Reinforcement Learning!
-- There are models for over 180 languages.
-- Any ML library can leverage the Hub: from TensorFlow and PyTorch to advanced integrations with spaCy, SpeechBrain, and 20 other libraries.
+- נמצאים שם יותר מ 30,000 מודלים פומביים.
+- יש שם מודלים לעיבוד שפה טבעית, לראיה ממוחשבת, שמע, וללמידה מחיזוקים!
+- קיימים מודלים ליותר מ 180 שפות.
+- כל ספריית ML יכולה להפיק ערך מה - Hub: מ - TensorFlow דרף PyTorch ועד אינטרגציות מתקדמות עם spaCy, SpeechBrain, ו - 20 ספריות נוספות.
 
-## Exploring a model
+## חקירת מודל
 
-Let’s kick off the exploration of models. You can access 30,000 models at [hf.co/models](http://hf.co/models). You will see [gpt2](https://huggingface.co/gpt2) as one of the models with the most downloads. Let’s click on it.
+בואו נתחיל בהכרת המודלים. אפשר לגשת ליותר מ 30,000 ב [hf.co/models](http://hf.co/models). שם תראו את [gpt2](https://huggingface.co/gpt2) כאחד מהמודלים עם הכי הרבה הורדות. נלחץ עליו.
 
 The website will take you to the model card when you click a model. A model card is a tool that documents models, providing helpful information about the models and being essential for discoverability and reproducibility.
 
@@ -219,3 +221,4 @@ There are Open-Source Python frameworks such as Gradio and Streamlit that allow 
 > ***Duration: 20-40 minutes***
 >
 > 👉 [click here to access the tutorial](https://colab.research.google.com/github.com/huggingface/education-toolkit/tree/main/02_ml-demos-with-gradio.ipynb)
+</span>
